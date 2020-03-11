@@ -1,0 +1,10 @@
+
+/* reglas CSS para formulario */
+.form-consulta {max-width: 600px; background: #FAEADD;  font-family: 'Source Sans Pro', sans-serif;}
+.campo-form {width:180%; height:40px;background:#F3E0D0; margin:2px 0 6px;  box-sizing: border-box; border-radius:10px; border:0; font-family: 'Source Sans Pro', sans-serif; font-size:1em;}
+label span {color: #FAEADD}
+textarea {min-height: 150px!important;}
+.btn-form {display: inline-block; border:0; background: #446667; height: 46px; line-height: 46px; padding: 0 20px; border-radius: 6px; color:#FCEFE4; text-decoration: none; text-transform: uppercase; letter-spacing: 1px}
+.btn-form:hover {background: #094322}
+.testimonio-novios {max-width: 500px; background: #fff; padding: 25px; font-family: 'Source Sans Pro', sans-serif;
+}

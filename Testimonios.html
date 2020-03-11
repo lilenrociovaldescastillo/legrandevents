@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<title>Testimonios</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://allfont.es/allfont.css?fonts=caudex-regular" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="formulario.css"/>
+<link href="styles.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'/>
+<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon" />
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+.link { 
+  color:#60391A;
+  text-decoration: none;
+  background-color: #FAEADD;
+} /* CSS link color (red) */
+.link:hover { 
+  color: #669999;
+} /* CSS link hover (green) */
+
+.w3-tangerine {
+   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman",serif; 
+   font-size: 15px; 
+   font-style: normal; 
+   font-variant: normal; 
+   font-weight: 700; 
+   line-height: 26.4px;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body style="background-color: #FAEADD">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+  <header class="w3-panel w3-center" style="padding:5px 16px"><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <a href="#home" class="w3-bar-item">
+      <h1>
+        <img src="images/logo.png" width="400" alt="logo"> 
+      </h1>
+    </a>
+    
+    <div class="w3-padding-8">
+      <div class="w3-bar w3-border-top w3-border-bottom w3-hide-small">
+        <a href="Index.html" class="w3-bar-item w3-tangerine link" >HOME</a>
+        <a href="Quienes.html" class="w3-bar-item w3-tangerine link">QUIENES SOMOS</a>
+        <a href="Proveedores.html" class="w3-bar-item w3-tangerine link">PROVEEDORES</a>
+        <a href="Galeria.html" class="w3-bar-item w3-tangerine link">GALERIA</a>
+        <a href="Testimonios.html" class="w3-bar-item w3-tangerine link"style="color: #669999;">TESTIMONIOS</a>
+       <a href="Eventos.html" class="w3-bar-item w3-tangerine link">CENTRO DE EVENTOS</a>
+         
+      
+        <a href="Contacto.html" class="w3-bar-item w3-tangerine link">CONTACTO</a>
+      </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+      
+      <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ¡ß</a>
+        <a href="Index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="Quienes.html" onclick="w3_close()" class="w3-bar-item w3-button">QUIENES SOMOS</a>
+        <a href="Proveedores.html" onclick="w3_close()" class="w3-bar-item w3-button">PROVEEDORES</a>
+        <a href="Galeria.html" onclick="w3_close()" class="w3-bar-item w3-button">GALERIA</a>
+        <a href="Testimonios.html" onclick="w3_close()" class="w3-bar-item w3-button">TERTIMONIOS</a>
+        <a href="Eventos.html" onclick="w3_close()" class="w3-bar-item w3-button">CENTRO DE EVENTOS</a>
+        <a href="Contacto.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+      </nav>
+    </div>
+  </header>
+<!-- End Page Content -->
+</div>
+
+<div class="w3-content" style="max-width:1000px">
+<div class="w3-content" style="max-width:1000px">
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4" style="width:80px; margin:20px;"><img height="80" src="images/testimonio11.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">
+<h6 class="testimonio-novios" style="color: #301C0D"><em><strong>Carolina y Gonzalo-Club Hipico</strong></em><br />
+&quot; Gracias por una noche incre&iacute;ble. El resultado fue m&aacute;s de lo esperado y en tan s&oacute;lo 2 meses de preparaci&oacute;n. Eternamente agradecidos&quot;.<br />
+Carolina y Chalo<br />
+matrigogos2017@gmail.com</h6>
+</div>
+
+<div class="w3-col s4" style="width:80px; margin:20px;"><img height="80" src="images/testimonio12.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">
+<h6 class="testimonio-novios" style="color: #301C0D"><em><strong>Francisca y Rub&eacute;n-Club La Uni&oacute;n</strong></em><br />
+&quot;Tuvimos mucha suerte de contratar a Carol Vargas, supo interpretar exactamente lo que quer&iacute;amos desde un primer momento. Nos acompa&ntilde;&oacute; en todo y estuvo hasta en el &uacute;ltimo detalle. Fue el matrimonio perfecto. Recomendamos totalmente su servicio porque adem&aacute;s de ser super profesional y de conocer a los mejores proveedores es una gran persona&quot;.<br />
+rubenfrancisca658@gmail.com</h6>
+</div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4" style="width:80px; margin:20px;"><img height="80" src="images/testimonio13.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">
+<h6 class="testimonio-novios" style="color: #301C0D"><strong><em>Valeria y Marcos-Casona El Aguila Champa</em></strong><br />
+&quot;Incre&iacute;ble el servicio que brindan. Todo m&aacute;s que 10 puntos. El personal excelente. Todos los invitados m&aacute;s que satisfechos con todo el servicio de comida. Los mozos excelentes. El Maitre un genio, se hizo cargo de todo. Los volver&iacute;a a elegir siempre. Los recomiendo al 100%. La relaci&oacute;n costo-beneficio m&aacute;s que satisfactoria.&quot;<br />
+valeriamac05@gmail.com</h6>
+</div>
+
+<div class="w3-col s4" style="width:80px ; margin:20px;"><img height="80" src="images/testimonio14.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">&nbsp;
+<h6 class="testimonio-novios" style="color: #301C0D"><strong><em>Maite y Alejandro-Club de Carabineros</em></strong><br />
+&quot;Desde el principio nos brindaron el mejor asesoramiento, nos guiaron y atendieron a todos nuestros requerimientos. El d&iacute;a de la fiesta se puso muy fr&iacute;o por lo que el civil se tuvo que trasladar dentro del sal&oacute;n en lugar de los jardines, pero qued&oacute; precioso y fue c&oacute;modo igual. La comida impecable, todos los invitados quedaron encantados con el men&uacute; y las bebidas y tragos de trasnoche&quot;.<br />
+&quot;Todos muy amables y el servicio de primera, hicieron que disfrut&aacute;ramos al m&aacute;ximo nuestro d&iacute;a.&quot;<br />
+fuentealbamaite3@gmail.com</h6>
+</div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4" style="width: 80px; text-align: center;"><img height="80" src="images/testimonio15.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">
+<p style="text-align: center;"></p>
+
+<h6 class="testimonio-novios" style="color: rgb(48, 28, 13); text-align: center;">&quot;Un regalito para ustedes. Mil Gracias!&quot;</h6>
+</div>
+
+<div class="w3-col s4" style="width:80px; margin:20px;"><img height="80" src="images/testimonio16.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">
+<h6 class="testimonio-novios" style="color: #301C0D"><strong><em>Fabiola y Nestor-Club Hipico</em></strong><br />
+&quot;Todo excelente, un casamiento so&ntilde;ado, est&aacute;n en todos los detalles, &iexcl;impecable! &iexcl;Te hacen sentir una reina! Una comida exquisita, recepci&oacute;n impresionante y fiesta inolvidable. La m&uacute;sica excelente de Faren Producciones muy profesionales y divertidos.&quot;<br />
+Fabiola y Nestor<br />
+fabiolapavezmatri77@gmail.com</h6>
+</div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+
+
+<div class="w3-col s4" style="width:80px;  margin:20px; "><img height="80" src="images/testimonio18.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">
+<h6 class="testimonio-novios" style="color: #301C0D"><strong><em>Camila Herrera - Horc&oacute;n 5ta Region</em></strong><br />
+&quot;Recomiendo al equipo Le Grand Events en un 100%! ; profesional sumamente detallista, comprometidos y muy c&aacute;lidos Todo su trabajo es impecable y maravilloso. Saben captar el perfil de sus clientes logrando que todo lo contratado siga una misma l&iacute;nea. En mi caso, se organiz&oacute; un matri simb&oacute;lico en Horc&oacute;n 5ta Regi&oacute;n, luego un almuerzo estilo Sunset tarde noche y mucha ayuda m&aacute;s all&aacute; de lo contratado!<br />
+Gracias Chicos!&quot;</h6>
+</div>
+<div class="w3-col s4" style="width:80px; margin:20px;"><img height="80" src="images/testimonio17.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">&nbsp;
+<h6 class="testimonio-novios" style="color: #301C0D"><strong><em>Mari Lu y Checho - Casablanca</em></strong><br />
+&quot;Hace unos a&ntilde;os conoc&iacute; los servicios de Le Grand siendo madrina de la boda de mi hermano. En ese momento estando ya de novia con mi pareja me asegur&eacute; que ellos ten&iacute;an que hacer mi matrimonio y as&iacute; fue la mejor elecci&oacute;n un 8 de septiembre de 2018 . Se ajustan a todos los cambios que se vayan dando en el camino, la atenci&oacute;n tan cercana me dio siempre tranquilidad y confianza lo que me permiti&oacute; seguir con mis proyectos laborales y personales . Y el gran d&iacute;a super&oacute; con creces mis expectativas; todo precioso y la comida exquisita.<br />
+Gracias! a todos y cada uno! Pronto nos veremos con el bautizo de mi Martin. :)<br />
+Saludos Mari Lu y Checho&quot;</h6>
+</div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4" style="width:80px ; margin:20px;"><img height="80" src="images/testimonio19.png" width="80" /></div>
+
+<div class="w3-col s4" style="width:300px">&nbsp;
+<h6 class="testimonio-novios" style="color: rgb(48, 28, 13);"><strong><em>Betza Del Rio y Matias Bugue&ntilde;o - Club Hipico</em></strong><br />
+&quot;Son unos secos !! 100% recomendables , Gracias a Carol por su dedicaci&oacute;n, siempre estuve confiada en lo que ella organizaba , todo detalle estuvo a cargo de ella y de su equipo. Los invitados comentaron como por una semana!!.&quot;</h6>
+
+</div>
+<div class="w3-col s4" style="width:80px; margin:20px;"></div>
+
+
+
+<div class="w3-col s4" style="width:300px">&nbsp;<center>
+<h4 style="text-align: right;"><span style="font-size:26px;"><span style="font-family:times new roman,times,serif;"><em><strong>Algunos de Nuestros clientes corporativos:</strong></em></span></span></h4>
+
+<p style="text-align: justify;"><a href="/sura.png"><img alt="" src="/sura.png" style="width: 250px; height: 95px; float: right;" /></a></p>
+
+<p style="text-align: justify;"><img alt="" src="/2622a9fd-64f7-4ec2-a75b-ca6b4d67e352.jpg" style="width: 250px; height: 87px; float: right;" /></p>
+
+<p style="text-align: justify;"><img alt="" src="/3e82d7fe-158a-4bfe-be64-01bc6e00c3aa.jpg" style="width: 250px; height: 95px; float: right;" /></p>
+
+<p style="text-align: justify;"><img alt="" src="/AngloAmerican_CMYK_Pos.tif" /><img alt="" src="/empresa.png" style="width: 250px; height: 95px; float: right;" /></p>
+    </div>
+    </center>
+  </div>
+  </div>
+  <div class="w3-bar " style="text-align: center;">
+    <h5 style="color: #000000">Sigueme en Instagram como:<br><img src="images/insta.png" width="32"><a href="https://www.instagram.com/le.grand.events/?hl=es-la"> </img>@le.grand.events</a></h5><br>
+  </div>
+  <iframe src="https://www.instagram.com/p/B3mLD0xnM2R/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B3ergTZnhDW/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B3ZbQPXnJtp/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B2wM8tQH1MY/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B1tRDAhnoqP/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B2T0RUrnw_2/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B2Ez0HvAldN/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://www.instagram.com/p/B0nzDh8nHan/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+ 
+ <br>
+ <center>
+	  <a href="https://www.facebook.com/carolvargas.planner.3"><img src="images/face.png"></a> 
+	  <a href="https://www.instagram.com/le.grand.events/"><img src="images/insta.png" width="32"></a>
+	  <br><br><br><br><br>
+	  <h1><i><FONT FACE="Times new roman">Premiados en el a&ntilde;o 2019 por calidad y desempe&ntilde;o</font></i></h1>
+	   <a href="https://www.zankyou.cl/f/le-grand-events-705181"><img src="images/premio1.png" width="115"/></a>
+	   <a href="https://www.zankyou.cl/f/le-grand-events-705181"><img src="images/sello.png" width="200"/></a>
+	  <a href="https://www.zankyou.cl/f/le-grand-events-705181"><img width="100" alt="Recomendado por Zankyou" src="https://asset1.zankyou.com/img/sections/badgets/zk_recommend/circle/badge_green_cl.png" /></a></center>
+<div class="w3-bar " style="text-align: center;">
+ <a href="#home">
+      <h1>
+        <img src="images/linea.png" width="1000" alt="logo"> 
+      </h1>
+    </a>
+  </div> 
+  <div class="w3-content w3-section"  style="max-width:1000px; text-align:center;">
+        <a href="#" class="w3-bar-item w3-button w3-padding"><p><small>Creado por: Infographics Solutions</small></p></a>
+        <a href="#" class="w3-bar-item w3-button w3-border-left w3-padding"><p><small>Le Grand Events SPA</small></p></a>
+        <a href="https://api.whatsapp.com/send?phone=56948652149&text=Hola%20..%20en%20que%20podemos%20ayudarte?" class="w3-bar-item w3-button w3-border-left w3-padding"><p><small>Tel:562 28098082 +569 48652149</small></p></a>
+      <a href="https://www.instagram.com/le.grand.events/"><p class="w3-bar-item w3-button w3-border-left w3-padding"><small>Follow us</small></p></a></
+      
+	  </div>  
+	   
+<!-- End Page Content -->
+	  
+</div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+</html>

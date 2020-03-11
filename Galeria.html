@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<title>Galeria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://allfont.es/allfont.css?fonts=caudex-regular" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon" />
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link { 
+  color:#60391A;
+  text-decoration: none;
+  background-color: #FAEADD;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.w3-tangerine {
+   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman",serif; 
+   font-size: 15px; 
+   font-style: normal; 
+   font-variant: normal; 
+   font-weight: 700; 
+   line-height: 26.4px;
+}
+.w3-titulo {
+   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman",serif; 
+   font-size: 25px; 
+   font-style: normal; 
+   font-variant: normal; 
+   font-weight: 700; 
+   line-height: 10.4px;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+<body style="background-color: #FAEADD">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1000px">
+
+<!-- Header -->
+  <header class="w3-panel w3-center" style="padding:5px 16px">
+    <a href="#home" class="w3-bar-item">
+      <h1>
+        <img src="images/logo.png" width="400" alt="logo"> 
+      </h1>
+    </a>
+    
+    <div class="w3-padding-8">
+      <div class="w3-bar w3-border-top w3-border-bottom w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-tangerine link" >HOME</a>
+        <a href="Quienes.html" class="w3-bar-item w3-tangerine link" >QUIENES SOMOS</a>
+        <a href="Proveedores.html" class="w3-bar-item w3-tangerine link">PROVEEDORES</a>
+        <a href="Galeria.html" class="w3-bar-item w3-tangerine link" style="color: #669999;">GALERIA</a>
+        <a href="Testimonios.html" class="w3-bar-item w3-tangerine link">TESTIMONIOS</a>
+        
+        <a href="Eventos.html" class="w3-bar-item w3-tangerine link">CENTRO DE EVENTOS</a>
+         
+        
+        <a href="Contacto.html" class="w3-bar-item w3-tangerine link">CONTACTO</a>
+      </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+      
+      <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="Quienes.html" onclick="w3_close()" class="w3-bar-item w3-button">QUIENES SOMOS</a>
+        <a href="Proveedores.html" onclick="w3_close()" class="w3-bar-item w3-button">PROVEEDORES</a>
+        <a href="Galeria.html" onclick="w3_close()" class="w3-bar-item w3-button">GALERIA</a>
+        <a href="Testimonios.html" onclick="w3_close()" class="w3-bar-item w3-button">TERTIMONIOS</a>
+        <a href="Eventos.html" onclick="w3_close()" class="w3-bar-item w3-button">CENTRO DE EVENTOS</a>
+        <a href="Contacto.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+      </nav>
+    </div>
+  </header>
+  <div class="w3-bar " style="text-align: center;">
+    <h1 class="w3-titulo w3-xxlarge" style="color: #669999;">Galeria</h1><br>
+  </div>
+  <!-- Photo Grid -->
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s111.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s112.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s113.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s114.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s5.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s116.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s117.jpg"  style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s118.jpg"  style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s119.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1110.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1111.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1112.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1113.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1114.jpg"  style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1115.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1116.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1117.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1118.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1119.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1120.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1121.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1122.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1123.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1124.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1125.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1126.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img class="myImages" id="myImg" src="images/s1127.jpg" style="width:100%">
+    </div>
+  </div>
+<center><a href="https://www.facebook.com/carolvargas.planner.3"><img src="images/face.png"></img></a> 
+	  <a href="https://www.instagram.com/le.grand.events/"><img src="images/insta.png" width="32"> </img></a>
+	  <br><br><br><br><br>
+	  <h1><i><FONT FACE="Times new roman">Premiados en el año 2019 por calidad y desempeño</font></i></h1>
+	   <a href="https://www.zankyou.cl/f/le-grand-events-705181"><img src="images/premio1.png" width="115"/></a>
+	   <a href="https://www.zankyou.cl/f/le-grand-events-705181"><img src="images/sello.png" width="200"/></a>
+	  <a href="https://www.zankyou.cl/f/le-grand-events-705181"><img width="100" alt="Recomendado por Zankyou" src="https://asset1.zankyou.com/img/sections/badgets/zk_recommend/circle/badge_green_cl.png" /></a>
+	  </center>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+
+  <div class="w3-bar " style="text-align: center;">
+    <a href="#home">
+      <h1>
+        <img src="images/linea.png" width="1000" alt="logo"> 
+      </h1>
+    </a>
+  </div>
+   <div class="w3-content w3-section"  style="max-width:1000px; text-align:center;">
+        <a href="#" class="w3-bar-item w3-button w3-padding"><p><small>Creado por: Infographics Solutions</small></p></a>
+        <a href="#" class="w3-bar-item w3-button w3-border-left w3-padding"><p><small>Le Grand Events SPA</small></p></a>
+        <a href="https://api.whatsapp.com/send?phone=56948652149&text=Hola%20..%20en%20que%20podemos%20ayudarte?" class="w3-bar-item w3-button w3-border-left w3-padding"><p><small>Tel:562 28098082 +569 48652149</small></p></a>
+      <a href="https://www.instagram.com/le.grand.events/"><p class="w3-bar-item w3-button w3-border-left w3-padding"><small>Follow us</small></p></a></
+      
+	  </div>
+	
+	  
+         
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
